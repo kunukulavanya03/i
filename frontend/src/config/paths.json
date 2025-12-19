@@ -1,0 +1,43 @@
+{
+  "api": {
+    "base": "/api",
+    "version": "v1",
+    "endpoints": {
+      "register": {
+        "post": "/api/register"
+      },
+      "login": {
+        "post": "/api/login"
+      },
+      "profile": {
+        "get": "/api/profile",
+        "put": "/api/profile"
+      },
+      "users": {
+        "get": "/api/users/search"
+      },
+      "friend-requests": {
+        "post": "/api/friend-requests",
+        "put": "/api/friend-requests/{id}"
+      }
+    }
+  },
+  "routes": {
+    "auth": {
+      "login": "/login",
+      "register": "/register",
+      "logout": "/logout",
+      "profile": "/profile"
+    },
+    "app": {
+      "home": "/",
+      "dashboard": "/dashboard",
+      "settings": "/settings"
+    }
+  },
+  "assets": {
+    "images": "/assets/images",
+    "icons": "/assets/icons",
+    "styles": "/assets/styles"
+  }
+}
